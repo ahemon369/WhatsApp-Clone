@@ -1,4 +1,4 @@
-package com.ahemon.whatsapp_clone
+package com.ahemon.whatsappclone
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.ahemon.whatsapp_clone.ui.theme.WhatsAppCloneTheme
+import com.ahemon.whatsappclone.ui.theme.WhatsAppCloneTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

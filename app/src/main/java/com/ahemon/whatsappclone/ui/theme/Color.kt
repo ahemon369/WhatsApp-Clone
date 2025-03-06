@@ -1,4 +1,4 @@
-package com.ahemon.whatsapp_clone.ui.theme
+package com.ahemon.whatsappclone.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.ahemon.whatsapp_clone
+package com.ahemon.whatsappclone
 
 import org.junit.Test
 
