@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.sp
 import com.ahemon.whatsappclone.R
 
 @Composable
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
 fun ChatDesign(
     chatDesignModel: ChatDesignModel
 ) {
