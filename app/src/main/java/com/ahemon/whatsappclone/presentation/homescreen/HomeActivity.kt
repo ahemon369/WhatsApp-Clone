@@ -8,7 +8,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
@@ -28,6 +31,19 @@ import com.ahemon.whatsappclone.R
 @Composable
 @Preview(showSystemUi = true)
 fun HomeScreen() {
+
+    val chatData = listOf(
+        ChatDesignModel(R.drawable.emon, "Ah emon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!"),
+        ChatDesignModel(R.drawable.emon, "Ahemon", "10:00 AM", "Hello there!")
+    )
 
     Scaffold(
         floatingActionButton = {
@@ -67,13 +83,43 @@ fun HomeScreen() {
 
                 Row(modifier = Modifier.align(Alignment.CenterEnd)) {
 
-                    IconButton(onClick = { /* */}) {
+                    IconButton(onClick = { /* */ }) {
 
-                        Icon(painter = painterResource(id = R.drawable.camera), contentDescription = null)
+                        Icon(
+                            painter = painterResource(id = R.drawable.camera),
+                            contentDescription = null,
+                            modifier = Modifier.size(24.dp)
+                        )
                     }
+
+                    IconButton(onClick = { /* */ }) {
+
+                        Icon(
+                            painter = painterResource(id = R.drawable.search),
+                            contentDescription = null,
+                            modifier = Modifier.size(24.dp)
+                        )
+                    }
+
+                    IconButton(onClick = { /* */ }) {
+
+                        Icon(
+                            painter = painterResource(id = R.drawable.more),
+                            contentDescription = null,
+                            modifier = Modifier.size(24.dp)
+                        )
+                    }
+
                 }
             }
 
+            HorizontalDivider()
+
+            LazyColumn {
+                items(chatData){
+                    ChatDesign(chatDesignModel = it)
+                }
+            }
         }
     }
 
