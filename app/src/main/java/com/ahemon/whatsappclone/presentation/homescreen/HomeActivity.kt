@@ -27,6 +27,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ahemon.whatsappclone.R
+import com.ahemon.whatsappclone.presentation.bottomnavigation.BottomNavigation
 
 @Composable
 @Preview(showSystemUi = true)
@@ -62,6 +63,9 @@ fun HomeScreen() {
                 )
 
             }
+        },
+        bottomBar = {
+            BottomNavigation()
         }
     ) {
 
