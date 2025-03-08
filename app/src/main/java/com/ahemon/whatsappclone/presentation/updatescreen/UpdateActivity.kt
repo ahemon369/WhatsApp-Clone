@@ -26,7 +26,7 @@ fun UpdateActivity() {
                 onClick = { },
                 containerColor = colorResource(id = R.color.light_green),
                 modifier = Modifier.size(65.dp),
-                contentColor = Color.White
+                //contentColor = Color.White
             ) {
                 Icon(painter = painterResource(id = R.drawable.baseline_photo_camera_24), contentDescription = null)
 
